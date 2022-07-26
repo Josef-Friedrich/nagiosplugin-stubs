@@ -1,5 +1,7 @@
-# nagiosplugin-stubs
-Type stubs for the nagiosplugin
+nagiosplugin-stubs
+==================
+
+Type stubs for the nagiosplugin package.
 
 Other stub packages
 
