@@ -18,9 +18,7 @@ class Metric:
     contextobj: Context | None = None
     resource: Resource | None = None
 
-    def replace(self, **attr):  # -> Self@Metric:
-        """Creates new instance with updated attributes."""
-        ...
+    def replace(self, **attr) -> Metric: ...
     @property
     def description(self) -> str: ...
     @property
