@@ -12,8 +12,8 @@ class Metric:
     name: str | None
     value: Any | None
     uom: str | None = None
-    min: float | None = None
-    max: float | None = None
+    min: int | float | None = None
+    max: int | float | None = None
     context: str | None = None
     contextobj: Context | None = None
     resource: Resource | None = None
