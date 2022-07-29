@@ -1,4 +1,4 @@
-from typing import Generator, List
+from typing import Generator
 
 from nagiosplugin.metric import Metric
 
@@ -6,4 +6,4 @@ class Resource:
 
     name: str
 
-    def probe(self) -> List[Metric] | Metric | Generator[Metric, None, None]: ...
+    def probe(self) -> list[Metric] | Metric | Generator[Metric, None, None]: ...

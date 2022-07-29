@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from typing import List, Literal
+from typing import Literal
 
-def worst(states: List[ServiceState]) -> ServiceState: ...
+def worst(states: list[ServiceState]) -> ServiceState: ...
 @dataclass
 class ServiceState:
     code: Literal[0, 1, 2, 3]

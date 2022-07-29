@@ -1,4 +1,4 @@
-from typing import List, Literal
+from typing import Literal
 
 from nagiosplugin.context import Context, Contexts
 from nagiosplugin.resource import Resource
@@ -7,11 +7,11 @@ from nagiosplugin.state import ServiceState
 from nagiosplugin.summary import Summary
 
 class Check:
-    resources: List[Resource]
+    resources: list[Resource]
     contexts: Contexts
     summary: Summary
     results: Results
-    perfdata: List[str]
+    perfdata: list[str]
     name: str
 
     def __init__(self, *objects: Resource | Context | Summary | Results) -> None: ...
@@ -23,6 +23,6 @@ class Check:
     @property
     def summary_str(self) -> str: ...
     @property
-    def verbose_str(self) -> List[str] | str: ...
+    def verbose_str(self) -> list[str] | str: ...
     @property
     def exitcode(self) -> Literal[0, 1, 2, 3]: ...

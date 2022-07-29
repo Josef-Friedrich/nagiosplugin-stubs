@@ -9,9 +9,9 @@ class Performance:
     label: str
     value: Any
     uom: str | None = None
-    warn: int | float | None = None
-    crit: int | float | None = None
-    min: int | float | None = None
-    max: int | float | None = None
+    warn: float | None = None
+    crit: float | None = None
+    min: float | None = None
+    max: float | None = None
 
     def __str__(self) -> str: ...

@@ -1,6 +1,6 @@
 from io import StringIO
 from logging import StreamHandler
-from typing import List, Literal, Tuple
+from typing import Literal, Sequence
 
 from nagiosplugin.check import Check
 
@@ -13,9 +13,9 @@ class Output:
     logchan: StreamHandler[StringIO]
     verbose: int
     status: str
-    out: List[str]
-    warnings: List[str]
-    longperfdata: List[str]
+    out: list[str]
+    warnings: list[str]
+    longperfdata: list[str]
 
     def __init__(
         self, logchan: StreamHandler[StringIO], verbose: int = ...
@@ -23,5 +23,5 @@ class Output:
     def add(self, check: Check) -> None: ...
     def format_status(self, check: Check) -> str: ...
     def format_perfdata(self, check: Check, linebreak: int = ...) -> str: ...
-    def add_longoutput(self, text: str | List[str] | Tuple[str]) -> None: ...
+    def add_longoutput(self, text: str | Sequence[str]) -> None: ...
     def __str__(self) -> str: ...

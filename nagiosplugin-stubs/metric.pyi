@@ -11,8 +11,8 @@ class MetricKwargs(TypedDict, total=False):
     name: str
     value: Any
     uom: str
-    min: int | float
-    max: int | float
+    min: float
+    max: float
     context: str
     contextobj: Context
     resource: Resource
@@ -23,8 +23,8 @@ class Metric:
     name: str
     value: Any
     uom: str | None = None
-    min: int | float | None = None
-    max: int | float | None = None
+    min: float | None = None
+    max: float | None = None
     context: str | None = None
     contextobj: Context | None = None
     resource: Resource | None = None
