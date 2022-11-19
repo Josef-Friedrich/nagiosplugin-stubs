@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nagiosplugin-stubs"
-version = "0.1.0"
+version = "0.2.0"
 description = "Type stubs for the nagiosplugin package."
 authors = ["Josef Friedrich <josef@friedrich.rocks>"]
 readme = "README.rst"
@@ -8,6 +8,9 @@ repository = "https://github.com/Josef-Friedrich/nagiosplugin-stubs"
 license = "MIT"
 classifiers = [
     "License :: OSI Approved :: MIT License",
+]
+packages = [
+    {include = "nagiosplugin-stubs"}
 ]
 
 [tool.poetry.dependencies]
