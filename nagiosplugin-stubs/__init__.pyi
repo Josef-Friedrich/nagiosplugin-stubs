@@ -1,17 +1,17 @@
-from .check import Check
-from .context import Context, ScalarContext
-from .cookie import Cookie
-from .error import CheckError, Timeout
-from .logtail import LogTail
-from .metric import Metric
-from .multiarg import MultiArg
-from .performance import Performance
-from .range import Range
-from .resource import Resource
-from .result import Result, Results
-from .runtime import Runtime, guarded
-from .state import Critical, Ok, Unknown, Warn
-from .summary import Summary
-from .version import __VERSION__
+from nagiosplugin.check import Check
+from nagiosplugin.context import Context, ScalarContext
+from nagiosplugin.cookie import Cookie
+from nagiosplugin.error import CheckError, Timeout
+from nagiosplugin.logtail import LogTail
+from nagiosplugin.metric import Metric
+from nagiosplugin.multiarg import MultiArg
+from nagiosplugin.performance import Performance
+from nagiosplugin.range import Range
+from nagiosplugin.resource import Resource
+from nagiosplugin.result import Result, Results
+from nagiosplugin.runtime import Runtime, guarded
+from nagiosplugin.state import Critical, Ok, Unknown, Warn
+from nagiosplugin.summary import Summary
+from nagiosplugin.version import __VERSION__
 
 __version__: str = ...

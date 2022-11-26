@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nagiosplugin-stubs"
-version = "0.2.0"
+version = "0.3.0"
 description = "Type stubs for the nagiosplugin package."
 authors = ["Josef Friedrich <josef@friedrich.rocks>"]
 readme = "README.rst"
