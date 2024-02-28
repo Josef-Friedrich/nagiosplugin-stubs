@@ -8,6 +8,15 @@ repository = "https://github.com/Josef-Friedrich/nagiosplugin-stubs"
 license = "MIT"
 classifiers = [
     "License :: OSI Approved :: MIT License",
+    "Typing :: Stubs Only",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3",
 ]
 packages = [
     {include = "nagiosplugin-stubs"}
@@ -18,9 +27,8 @@ python = "^3.8"
 typing-extensions = "^4.3.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.6.0"
-isort = "^5.10.1"
+ruff = "^0"
 
 [build-system]
-requires = ["poetry>=1.2.0b2"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

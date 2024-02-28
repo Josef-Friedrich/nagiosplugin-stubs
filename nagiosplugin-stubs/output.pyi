@@ -7,7 +7,6 @@ from nagiosplugin.check import Check
 def filter_output(output: str, filtered: str) -> str: ...
 
 class Output:
-
     ILLEGAL: Literal["|"] = ...
 
     logchan: StreamHandler[StringIO]

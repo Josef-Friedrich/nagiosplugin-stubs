@@ -8,7 +8,6 @@ from nagiosplugin.state import ServiceState
 
 @dataclass
 class Result:
-
     state: ServiceState
     hint: str | None = None
     metric: Metric | None = None
