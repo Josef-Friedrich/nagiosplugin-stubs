@@ -5,7 +5,6 @@ def zap_none(val: Any | None) -> Any | Literal[""]: ...
 def quote(label: str) -> str: ...
 @dataclass
 class Performance:
-
     label: str
     value: Any
     uom: str | None = None

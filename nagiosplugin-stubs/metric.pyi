@@ -19,7 +19,6 @@ class MetricKwargs(TypedDict, total=False):
 
 @dataclass
 class Metric:
-
     name: str
     value: Any
     uom: str | None = None
