@@ -6,11 +6,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## Unreleased
+## [v0.5.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.5.0) - 2024-02-28
 
-<small>[Compare with latest](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.3.0...HEAD)</small>
+<small>[Compare with v0.4.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.4.0...v0.5.0)</small>
 
-<!-- insertion marker -->
+### Fixed
+
+- Fix wrong type of argument verbose ([9f6ae65](https://github.com/Josef-Friedrich/nagiosplugin-stubs/commit/9f6ae65d657b82ce8b3e4c64832dabcbf196977b) by Josef Friedrich).
+
+## [v0.4.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.4.0) - 2022-11-26
+
+<small>[Compare with v0.3.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.3.0...v0.4.0)</small>
+
+### Fixed
+
+- Fix reimports ([5821699](https://github.com/Josef-Friedrich/nagiosplugin-stubs/commit/5821699d0671e1e0c82d518101b7ce80b32ab58a) by Josef Friedrich).
+
 ## [v0.3.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.3.0) - 2022-11-26
 
 <small>[Compare with v0.2.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.2.0...v0.3.0)</small>
