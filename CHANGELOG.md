@@ -7,16 +7,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- insertion marker -->
 
+## [v0.6.1](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.6.1) - 2024-03-03
+
+<small>[Compare with v0.6.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.6.0...v0.6.1)</small>
+
+### Fixed
+
+- Fix types of the named tuples `Result` and `Performance`: They are named tuples and not data classes.
+
 ## [v0.6.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.6.0) - 2024-03-03
 
 <small>[Compare with v0.5.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.5.0...v0.6.0)</small>
 
-## Added
+### Added
 
 - Add tests using tox
 - Add github action to run tests
 
-## Fixed
+### Fixed
 
 - Fix constructor argument types in the class `Performance`
 - Fix the types ServiceState, Ok, Warn, Error, Unknown (NamedTuple)
