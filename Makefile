@@ -1,3 +1,6 @@
+test:
+	poetry run tox
+
 install: update
 
 update:
@@ -18,4 +21,4 @@ format:
 lint:
 	ruff check
 
-.PHONY: install update build publish format lint
+.PHONY: test install update build publish format lint

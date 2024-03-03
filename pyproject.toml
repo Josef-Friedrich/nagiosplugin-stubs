@@ -28,6 +28,7 @@ typing-extensions = "^4.3.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0"
+tox = "^4"
 
 [build-system]
 requires = ["poetry-core"]

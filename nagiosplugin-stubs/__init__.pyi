@@ -27,6 +27,5 @@ from nagiosplugin.state import (
     Warn as Warn,
 )
 from nagiosplugin.summary import Summary as Summary
-from nagiosplugin.version import __VERSION__
 
 __version__: str = ...
