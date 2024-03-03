@@ -2,8 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.1.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [v0.6.4](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.6.4) - 2024-03-03
+
+<small>[Compare with v0.6.3](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.6.3...v0.6.4)</small>
+
+### Fixed
+
+- Fix return type of `Context.performance()`
 
 ## [v0.6.3](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.6.3) - 2024-03-03
 
