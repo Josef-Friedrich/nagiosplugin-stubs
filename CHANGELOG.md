@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Fixed
 
-* Fix constructor argument types in the class `Performance`
+- Fix constructor argument types in the class `Performance`
+- Fix the types ServiceState, Ok, Warn, Error, Unknown (NamedTuple)
 
 ## [v0.5.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.5.0) - 2024-02-28
 
