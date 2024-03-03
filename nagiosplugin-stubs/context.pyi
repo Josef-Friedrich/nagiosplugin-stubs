@@ -2,7 +2,7 @@ from typing import Callable, Iterator, Optional, Protocol
 
 from nagiosplugin.metric import Metric
 from nagiosplugin.performance import Performance
-from nagiosplugin.range import Range
+from nagiosplugin.range import RangOrString
 from nagiosplugin.resource import Resource
 from nagiosplugin.result import Result
 from nagiosplugin.state import ServiceState
@@ -13,8 +13,6 @@ class ResultCls(Protocol):
     def __call__(
         self, state: ServiceState, hint: str | None = ..., metric: Metric | None = ...
     ) -> Result: ...
-
-RangOrString = Range | str
 
 class Context:
     name: str
