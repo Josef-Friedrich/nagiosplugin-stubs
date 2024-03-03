@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+
+## [v0.6.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.6.0) - 2024-03-03
+
+<small>[Compare with v0.5.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.5.0...v0.6.0)</small>
+
+## Fixed
+
+* Fix constructor argument types in the class `Performance`
+
 ## [v0.5.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/releases/tag/v0.5.0) - 2024-02-28
 
 <small>[Compare with v0.4.0](https://github.com/Josef-Friedrich/nagiosplugin-stubs/compare/v0.4.0...v0.5.0)</small>
@@ -44,4 +53,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add type hints ([ac99cc2](https://github.com/Josef-Friedrich/nagiosplugin-stubs/commit/ac99cc27efaef6387a7ce268ce80622c9bdca0b2) by Josef Friedrich).
 - Add boilerplate files ([a93c235](https://github.com/Josef-Friedrich/nagiosplugin-stubs/commit/a93c23574b9dc1c70f31cfd90490ece94d58c10c) by Josef Friedrich).
 - Add the automatically generated files ([d3ab0ed](https://github.com/Josef-Friedrich/nagiosplugin-stubs/commit/d3ab0ed19b3984b7263b76dfe13fe7dfd8add113) by Josef Friedrich).
-
