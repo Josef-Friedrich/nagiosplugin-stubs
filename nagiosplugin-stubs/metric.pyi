@@ -1,5 +1,4 @@
-from dataclasses import dataclass
-from typing import Any
+from typing import Any, NamedTuple, Optional
 
 from nagiosplugin.context import Context
 from nagiosplugin.performance import Performance
@@ -17,17 +16,32 @@ class MetricKwargs(TypedDict, total=False):
     contextobj: Context
     resource: Resource
 
-@dataclass
-class Metric:
-    name: str
-    value: Any
-    uom: str | None = None
-    min: float | None = None
-    max: float | None = None
-    context: str | None = None
-    contextobj: Context | None = None
-    resource: Resource | None = None
-
+class Metric(
+    NamedTuple(
+        "Metric",
+        [
+            ("name", str),
+            ("value", Any),
+            ("uom", str),
+            ("min", float),
+            ("max", float),
+            ("context", str),
+            ("contextobj", Context),
+            ("resource", Resource),
+        ],
+    )
+):
+    def __new__(
+        cls,
+        name: str,
+        value: Any,
+        uom: Optional[str] = ...,
+        min: Optional[float] = ...,
+        max: Optional[float] = ...,
+        context: Optional[str] = ...,
+        contextobj: Optional[Context] = ...,
+        resource: Optional[Resource] = ...,
+    ) -> Metric: ...
     def replace(self, **attr: Unpack[MetricKwargs]) -> Metric: ...
     @property
     def description(self) -> str: ...

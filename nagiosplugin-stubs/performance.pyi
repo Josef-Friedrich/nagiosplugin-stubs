@@ -1,4 +1,4 @@
-from typing import Any, Literal, NamedTuple
+from typing import Any, Literal, NamedTuple, Optional
 
 from .range import Range
 
@@ -23,9 +23,9 @@ class Performance(
         cls,
         label: str,
         value: Any,
-        uom: str = "",
-        warn: Range | str = "",
-        crit: Range | str = "",
-        min: str = "",
-        max: str = "",
+        uom: Optional[str] = ...,
+        warn: Optional[Range | str] = ...,
+        crit: Optional[Range | str] = ...,
+        min: Optional[float] = ...,
+        max: Optional[float] = ...,
     ) -> Performance: ...
