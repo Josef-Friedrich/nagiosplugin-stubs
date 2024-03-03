@@ -1,18 +1,31 @@
-from dataclasses import dataclass
-from typing import Any, Literal
+from typing import Any, Literal, NamedTuple
 
 from .range import Range
 
 def zap_none(val: Any | None) -> Any | Literal[""]: ...
 def quote(label: str) -> str: ...
-@dataclass
-class Performance:
-    label: str
-    value: Any
-    uom: str | None = None
-    warn: Range | None = None
-    crit: Range | None = None
-    min: float | None = None
-    max: float | None = None
 
-    def __str__(self) -> str: ...
+class Performance(
+    NamedTuple(
+        "Performance",
+        [
+            ("label", str),
+            ("value", Any),
+            ("uom", str),
+            ("warn", Range | str),
+            ("crit", Range | str),
+            ("min", float),
+            ("max", float),
+        ],
+    )
+):
+    def __new__(
+        cls,
+        label: str,
+        value: Any,
+        uom: str = "",
+        warn: Range | str = "",
+        crit: Range | str = "",
+        min: str = "",
+        max: str = "",
+    ) -> Performance: ...

@@ -1,18 +1,18 @@
-from dataclasses import dataclass
-from typing import Generator, Literal
+from typing import Generator, Literal, NamedTuple
 
 from nagiosplugin.context import Context
 from nagiosplugin.metric import Metric
 from nagiosplugin.resource import Resource
 from nagiosplugin.state import ServiceState
 
-@dataclass
-class Result:
-    state: ServiceState
-    hint: str | None = None
-    metric: Metric | None = None
+class Result(
+    NamedTuple(
+        "Result",
+        [("state", ServiceState), ("hint", str | None), ("metric", Metric | None)],
+    )
+):
     def __new__(
-        cls, state: ServiceState, hint: str | None = ..., metric: Metric | None = ...
+        cls, state: ServiceState, hint: str | None = None, metric: Metric | None = None
     ) -> Result: ...
     def __str__(self) -> str: ...
     @property
