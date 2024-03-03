@@ -1,9 +1,10 @@
 from io import StringIO
 from logging import StreamHandler
-from typing import Callable, NoReturn, ParamSpec, TypeVar
+from typing import Callable, NoReturn, TypeVar
 
 from nagiosplugin.check import Check
 from nagiosplugin.output import Output
+from typing_extensions import ParamSpec
 
 P = ParamSpec("P")
 R = TypeVar("R")
