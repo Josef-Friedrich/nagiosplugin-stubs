@@ -12,4 +12,4 @@ class Range:
     @property
     def violation(self) -> str: ...
 
-RangOrString = Range | str
+RangeOrString = Range | str
