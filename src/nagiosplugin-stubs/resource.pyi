@@ -1,5 +1,4 @@
-from typing import Generator
-from typing import Union
+from typing import Generator, Union
 
 from nagiosplugin.metric import Metric
 

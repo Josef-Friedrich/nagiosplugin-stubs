@@ -1,35 +1,30 @@
-[tool.poetry]
+[project]
 name = "nagiosplugin-stubs"
 version = "0.6.4"
 description = "Type stubs for the nagiosplugin package."
-authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
+requires-python = ">=3.8,<4"
 readme = "README.rst"
-repository = "https://github.com/Josef-Friedrich/nagiosplugin-stubs"
 license = "MIT"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Typing :: Stubs Only",
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
-packages = [
-    {include = "nagiosplugin-stubs"}
-]
+dependencies = ["typing-extensions>=4.3.0,<5"]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-typing-extensions = "^4.3.0"
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0"
-tox = "^4"
+[project.urls]
+Repository = "https://github.com/Josef-Friedrich/nagiosplugin-stubs"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
