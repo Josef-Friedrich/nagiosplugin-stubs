@@ -1,6 +1,6 @@
 [project]
 name = "nagiosplugin-stubs"
-version = "0.6.4"
+version = "0.7.0"
 description = "Type stubs for the nagiosplugin package."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
 requires-python = ">=3.8,<4"
@@ -26,5 +26,10 @@ dependencies = ["typing-extensions>=4.3.0,<5"]
 Repository = "https://github.com/Josef-Friedrich/nagiosplugin-stubs"
 
 [build-system]
-requires = ["uv_build>=0.10.2,<0.11.0"]
+requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+]
