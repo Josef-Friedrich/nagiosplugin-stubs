@@ -1,6 +1,6 @@
 from typing import Any, Literal, NamedTuple, Optional
 
-from .range import RangeOrString
+from .range import RangeSpec
 
 def zap_none(val: Any | None) -> Any | Literal[""]: ...
 def quote(label: str) -> str: ...
@@ -12,8 +12,8 @@ class Performance(
             ("label", str),
             ("value", Any),
             ("uom", str),
-            ("warn", RangeOrString),
-            ("crit", RangeOrString),
+            ("warn", RangeSpec),
+            ("crit", RangeSpec),
             ("min", float),
             ("max", float),
         ],
@@ -24,8 +24,8 @@ class Performance(
         label: str,
         value: Any,
         uom: Optional[str] = ...,
-        warn: Optional[RangeOrString] = ...,
-        crit: Optional[RangeOrString] = ...,
+        warn: Optional[RangeSpec] = ...,
+        crit: Optional[RangeSpec] = ...,
         min: Optional[float] = ...,
         max: Optional[float] = ...,
     ) -> Performance: ...

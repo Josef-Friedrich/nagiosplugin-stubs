@@ -2,7 +2,7 @@ from typing import Callable, Iterator, Optional, Protocol
 
 from nagiosplugin.metric import Metric
 from nagiosplugin.performance import Performance
-from nagiosplugin.range import RangeOrString
+from nagiosplugin.range import RangeSpec
 from nagiosplugin.resource import Resource
 from nagiosplugin.result import Result
 from nagiosplugin.state import ServiceState
@@ -31,8 +31,8 @@ class ScalarContext(Context):
     def __init__(
         self,
         name: str,
-        warning: RangeOrString = ...,
-        critical: RangeOrString = ...,
+        warning: Optional[RangeSpec] = ...,
+        critical: Optional[RangeSpec] = ...,
         fmt_metric: FmtMetric = ...,
         result_cls: Result = ...,
     ) -> None: ...
