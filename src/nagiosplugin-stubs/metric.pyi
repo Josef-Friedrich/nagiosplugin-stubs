@@ -4,9 +4,8 @@ from nagiosplugin.context import Context
 from nagiosplugin.performance import Performance
 from nagiosplugin.resource import Resource
 from nagiosplugin.result import Result
-from typing_extensions import TypedDict, Unpack
-
 from nagiosplugin.state import ServiceState
+from typing_extensions import TypedDict, Unpack
 
 class MetricKwargs(TypedDict, total=False):
     name: str
