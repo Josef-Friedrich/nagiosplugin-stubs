@@ -1,6 +1,6 @@
 from io import StringIO
 from logging import StreamHandler
-from typing import Callable, NoReturn, TypeVar
+from typing import Callable, NoReturn, Optional, TypeVar
 
 from nagiosplugin.check import Check
 from nagiosplugin.output import Output
@@ -10,7 +10,7 @@ P = ParamSpec("P")
 R = TypeVar("R")
 
 def guarded(
-    original_function: Callable[P, R], verbose: bool = ...
+    original_function: Optional[Callable[P, R]], verbose: Optional[int] = ...
 ) -> Callable[P, R]: ...
 
 class Runtime:
