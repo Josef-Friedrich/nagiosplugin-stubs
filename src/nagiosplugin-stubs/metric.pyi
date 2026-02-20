@@ -1,10 +1,12 @@
-from typing import Any, NamedTuple, Optional
+from typing import Any, NamedTuple, Optional, Union
 
 from nagiosplugin.context import Context
 from nagiosplugin.performance import Performance
 from nagiosplugin.resource import Resource
 from nagiosplugin.result import Result
 from typing_extensions import TypedDict, Unpack
+
+from nagiosplugin.state import ServiceState
 
 class MetricKwargs(TypedDict, total=False):
     name: str
@@ -47,5 +49,5 @@ class Metric(
     def description(self) -> str: ...
     @property
     def valueunit(self) -> str: ...
-    def evaluate(self) -> Result: ...
+    def evaluate(self) -> Union[Result, ServiceState]: ...
     def performance(self) -> Optional[Performance]: ...
