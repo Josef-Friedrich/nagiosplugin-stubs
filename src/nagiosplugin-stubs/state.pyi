@@ -7,6 +7,9 @@ class ServiceState(NamedTuple("ServiceState", [("code", int), ("text", str)])):
     def __str__(self) -> str: ...
 
 Ok: ServiceState
+
 Warn: ServiceState
+
 Critical: ServiceState
+
 Unknown: ServiceState

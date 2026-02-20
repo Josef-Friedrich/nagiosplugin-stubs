@@ -18,6 +18,7 @@ class Context:
     name: str
     fmt_metric: FmtMetric
     result_cls: ResultCls
+
     def __init__(
         self, name: str, fmt_metric: FmtMetric = ..., result_cls: ResultCls = ...
     ) -> None: ...
